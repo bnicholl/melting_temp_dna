@@ -31,7 +31,7 @@ class GetSample(object):
     
     def get_sequence(self):  
         
-        Entrez.email = "bnicholl66@gmail.com"
+        Entrez.email = "bnicholl66@gmail.com"  #  Prerequisite for obtaining information from Entrez server
         handle = Entrez.efetch(db = 'nucleotide', id = self.sequence,
                        rettype = 'gb',retmode='text')
 #  a file handle is a filename, or in this case the method for getting an adress
